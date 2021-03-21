@@ -32,8 +32,30 @@ Because shared homology molecular level provides functional insight (by evolutio
 
 Homology is a similarity due to shared ancestry between a pair of structures of genes in different texa. The homology-based tool uses this phenomenon in characterizing the function/structure of unknown sequences. The gene databases used here are collections of annotated genes. By searching a gene against the database, we will look for homology between our gene sequences and those in the database to transfer annotation.
 
-Command Used:
+##### Antimicrobial Resistance Genes: DeepARG
+Annotates antibiotic resistance genes in metagenomes
+- Will get a list of antibiotic categories, protein family membership, molecular function, cellular component ​
+- Uses a machine learning solution
 
+- Input file format:  .fasta/blast
+- Output file format: probabilities of each read/gene belonging to a specific resistance category, .gff
+
+##### Protein Regions: EggNOG-Mapper
+Find orthology assignments using precomputed clustering
+
+- Input file format:  .fasta
+- Output file format: sequence description including molecular function, .gff
+
+##### Operons & Gene Clusters: MicrobesOnline
+Predicts whether pairs of adjacent genes that are on the same strand are in the same operon, based on the intergenic distance between them, whether orthologs of the genes are near each other in other genomes, and their predicted functions.
+
+- Create a database using Blast:
+
+  makeblastdb -in <fasta file> -dbtype prot -out <database>
+
+- Query the clustered sequences with the reference protein database:
+
+  blastp -query cdhit/faa_rep_seq.faa -db tmp/db_operon -evalue 0.01 -max_target_seqs 1 -max_hsps 1 -outfmt 6 -out tmp/hits_0.01.txt -num_threads 5
   ___
 ##### 3. AB-INITIO APPROACH
 
