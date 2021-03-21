@@ -47,7 +47,7 @@ The SignalP 5.0 tool predicts the presence of signal peptides and the location o
 - Input file format:  .fasta
 - Output file format: .gff
 - Command used:       
-  ___
+
 ##### CRISPR Regions: PILER-CR
 
 Predict CRISPR regions based on identified repeats. It's default options are that 3 repeats minimum in an array, 16 minimum repeat length, 64 maximum repeat length, 8 minimum spacer length, 64 maximum spacer length, 0.9 minimum repeat ratio, 0.75 minimum spacer ratio.
@@ -55,7 +55,7 @@ Predict CRISPR regions based on identified repeats. It's default options are tha
 - Input file format:  .fasta
 - Output file format: .gff
 - Command used:
-___
+
 ##### Transmembrane Domains: TMHMM
 
 TMHMM is a membrane protein topology prediction tool that focuses on the prediction of transmembrane helices in proteins with high accuracy. Its accuracy can be comprised in the presence of signal peptides.
@@ -63,3 +63,4 @@ TMHMM is a membrane protein topology prediction tool that focuses on the predict
 - Input file format:  .fasta
 - Output file format: .gff
 - Command used: ./tmhmm <input file path> > <output file path>
+  ___
