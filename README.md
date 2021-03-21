@@ -38,7 +38,13 @@ COMMAND USED:
   ___
 ##### 3. AB-INITIO APPROACH
 
-Ab-Initio Tools predict and annotate different regions of the prokaryotic genome using 1) sequence composition, 2) likelihoods within the gene models, 3) gene content and 4) Signal Detection. The Ab-Initio Approach can be used for finding new genes, and no external data or evidence is needed for the prediction. However, it is limited by the presence of False Positives in the predicted data as well as over-prediction of small genes.
+Ab-Initio Tools predict and annotate different regions of the prokaryotic genome using
+- sequence composition
+- likelihoods within the gene models
+- gene content
+- Signal Detection
+
+The Ab-Initio Approach can be used for finding new genes, and no external data or evidence is needed for the prediction. However, it is limited by the presence of False Positives in the predicted data as well as over-prediction of small genes.
 
 ##### SignalP 5.0
 
