@@ -68,5 +68,5 @@ TMHMM is a membrane protein topology prediction tool that focuses on the predict
 
 - Input file format:  .fasta
 - Output file format: .gff
-- Command used: ./tmhmm <input file path> > <output file path>
+- Command used: ./tmhmm input_file_path > output_file_path
   ___
