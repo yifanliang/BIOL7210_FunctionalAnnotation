@@ -88,6 +88,6 @@ Predict CRISPR regions based on identified repeats. It's default options are tha
 TMHMM is a membrane protein topology prediction tool that focuses on the prediction of transmembrane helices in proteins with high accuracy. Its accuracy can be comprised in the presence of signal peptides.
 
 - Input file format:  .fasta
-- Output file format: .gff
-- Command used: ./tmhmm input_file_path > output_file_path
+- Output format: short/long, .txt
+- Command used: ./tmhmm -output_format input_file_path > output_file_path
   ___
