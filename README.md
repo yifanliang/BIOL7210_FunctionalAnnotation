@@ -25,15 +25,14 @@ In our study, we are concerned with implications of subset of genes and features
 
 Because shared homology molecular level provides functional insight (by evolution at the molecular level being a largely conserved process) and significant sequence similarity implies shared function, we will use cluster sequences to reduce repeat queries and improve speed and aid in understanding the functions of the sequences. Sequences within the same group are deemed similar. Isolated groups are considered dissimilar from each other.
 
-COMMAND USED:
-
+- Command Used:
   ___
 
 ##### 2. HOMOLOGY BASED TOOLS
 
 Homology is a similarity due to shared ancestry between a pair of structures of genes in different texa. The homology-based tool uses this phenomenon in characterizing the function/structure of unknown sequences. The gene databases used here are collections of annotated genes. By searching a gene against the database, we will look for homology between our gene sequences and those in the database to transfer annotation.
 
-COMMAND USED:
+Command Used:
 
   ___
 ##### 3. AB-INITIO APPROACH
