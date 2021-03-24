@@ -10,15 +10,23 @@ Functional annotation is defined as the process of collecting information about 
 In our study, we are concerned with implications of subset of genes and features which have greater relevance to outbreaks (anti-microbial genes, CRISPR regions etc). We will perform a full functional annotation on the genes and proteins determined by Group Gene Prediction in Team 1.
   ___
 ##### PREREQUISITES:
+This pipeline assumes all tools listed below and their dependencies have already been installed.
 -	git
 -	conda
 -	make
 -	Perl & CPAN
-- R
+- Python 2.7 and 3.0
+- [USEARCH](https://www.drive5.com/usearch/download.html)
+- [DeepARG](https://bench.cs.vt.edu/deeparg)
+- [EggNOG-Mapper](https://github.com/eggnogdb/eggnog-mapper)
+- [MicrobesOnline](http://www.microbesonline.org/)
+- [SignalP 5.0](https://services.healthtech.dtu.dk/service.php?SignalP-5.0)
+- [TMHMM 2.0](https://services.healthtech.dtu.dk/service.php?TMHMM-2.0)
+- [PilerCR](https://www.drive5.com/pilercr/)
   ___
 ##### TOOLS INSTALLED/INVOKED:  
-- Clustering: USEARCH AND CD-HIT
-- Homology Based: DeepARG, InterProScan, EggNOG-Mapper
+- Clustering: USEARCH
+- Homology Based: DeepARG, EggNOG-Mapper, MicrobesOnline
 - Ab-initio Based: SignalP 5.0, PILER-CR, TMHMM 2.0
   ___
 ##### 1. CLUSTERING: USEARCH
