@@ -39,9 +39,8 @@ USEARCH is a widely used program for sequence clustering, among other functions.
 - Identity is calculated using kmers and global alignment
 
 Command used:
-  <usearch path> -cluster_fast <input fasta> -id <identity threshold> -centroids <centroids output> -uc <uclust output>
+> usearch_path -cluster_fast input_fasta -id identity_threshold -centroids centroids_output -uc uclust_output
   ___
-
 ##### 2. HOMOLOGY BASED TOOLS
 
 Homology is a similarity due to shared ancestry between a pair of structures of genes in different texa. The homology-based tool uses this phenomenon in characterizing the function/structure of unknown sequences. The gene databases used here are collections of annotated genes. By searching a gene against the database, we will look for homology between our gene sequences and those in the database to transfer annotation.
