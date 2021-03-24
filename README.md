@@ -69,10 +69,10 @@ Command Used:
 Predicts whether pairs of adjacent genes that are on the same strand are in the same operon, based on the intergenic distance between them, whether orthologs of the genes are near each other in other genomes, and their predicted functions.
 
 - Create a database using Blast:
-> makeblastdb -in <fasta file> -dbtype prot -out <database>
+> makeblastdb -in <fasta_ref_file> -dbtype prot -out <database_name>
 
 - Query the clustered sequences with the reference protein database:
-> blastp -query cdhit/faa_rep_seq.faa -db tmp/db_operon -evalue 0.01 -max_target_seqs 1 -max_hsps 1 -outfmt 6 -out tmp/hits_0.01.txt -num_threads 5
+> blastp -query <fasta_file> -db <operon_db> -evalue 0.01 -max_target_seqs 1 -max_hsps 1 -out <output_directory> -num_threads 5
   ___
 ##### 3. AB-INITIO APPROACH
 
