@@ -31,9 +31,15 @@ This pipeline assumes all tools listed below and their dependencies have already
   ___
 ##### 1. CLUSTERING: USEARCH
 
-Because shared homology molecular level provides functional insight (by evolution at the molecular level being a largely conserved process) and significant sequence similarity implies shared function, we will use cluster sequences to reduce repeat queries and improve speed and aid in understanding the functions of the sequences. Sequences within the same group are deemed similar. Isolated groups are considered dissimilar from each other.
+Because shared homology molecular level provides functional insight (by evolution at the molecular level being a largely conserved process) and significant sequence similarity implies shared function, we will cluster sequences to reduce repeat queries and improve speed and aid in understanding the functions of the sequences. As protein function is decided by amino acid sequence, we've decided to cluster amino acid sequences and use them through our pipeline.
 
-- Command Used:
+USEARCH is a widely used program for sequence clustering, among other functions.
+- Uses a greedy-incremental heuristic algorithm that sorts by order
+- Centroid representatives for clusters
+- Identity is calculated using kmers and global alignment
+
+Command used:
+  <usearch path> -cluster_fast <input fasta> -id <identity threshold> -centroids <centroids output> -uc <uclust output>
   ___
 
 ##### 2. HOMOLOGY BASED TOOLS
