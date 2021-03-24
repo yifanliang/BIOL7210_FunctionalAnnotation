@@ -59,6 +59,9 @@ Find orthology assignments using precomputed clustering
 - Input file format:  .fasta
 - Output file format: sequence description including molecular function, .gff
 
+Command Used:
+> python emapper.py -i <input_centroid_file> --output <output_file_name> -m diamond -d bact -o <output_directory> --cpu <cpu>
+
 ##### Operons & Gene Clusters: MicrobesOnline
 Predicts whether pairs of adjacent genes that are on the same strand are in the same operon, based on the intergenic distance between them, whether orthologs of the genes are near each other in other genomes, and their predicted functions.
 
