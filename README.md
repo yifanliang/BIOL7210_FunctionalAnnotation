@@ -80,7 +80,7 @@ Ab-Initio Tools predict and annotate different regions of the prokaryotic genome
 
 The Ab-Initio Approach can be used for finding new genes, and no external data or evidence is needed for the prediction. However, it is limited by the presence of False Positives in the predicted data as well as over-prediction of small genes.
 
-##### SignalP 5.0
+##### Signal Peptides: SignalP 5.0
 
 The SignalP 5.0 tool predicts the presence of signal peptides and the location of their cleavage sites in proteins from Archaea, Gram-positive Bacteria, Gram-negative Bacteria, and Eukarya. For Bacteria and Archaea, SignalP 5.0 is known to discriminate between three types of signal peptides Sec/SPI (standard signal peptide), Sec/SPII (lipoprotein signal peptide) and Tat/SPI (tat signal peptide). SignalP 5.0 is based on a deep convolutional and recurrent neural network architecture including a conditional random field.
 
