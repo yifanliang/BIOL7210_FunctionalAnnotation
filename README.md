@@ -53,6 +53,9 @@ Annotates antibiotic resistance genes in metagenomes
 - Input file format:  .fasta/blast
 - Output file format: probabilities of each read/gene belonging to a specific resistance category, .gff
 
+Command Used:
+> deeparg predict --model SS -i <input_file> -o <output_path> -d <database_location> --type proct --min-prob 0.8
+
 ##### Protein Regions: EggNOG-Mapper
 Find orthology assignments using precomputed clustering
 
@@ -66,12 +69,10 @@ Command Used:
 Predicts whether pairs of adjacent genes that are on the same strand are in the same operon, based on the intergenic distance between them, whether orthologs of the genes are near each other in other genomes, and their predicted functions.
 
 - Create a database using Blast:
-
-  makeblastdb -in <fasta file> -dbtype prot -out <database>
+> makeblastdb -in <fasta file> -dbtype prot -out <database>
 
 - Query the clustered sequences with the reference protein database:
-
-  blastp -query cdhit/faa_rep_seq.faa -db tmp/db_operon -evalue 0.01 -max_target_seqs 1 -max_hsps 1 -outfmt 6 -out tmp/hits_0.01.txt -num_threads 5
+> blastp -query cdhit/faa_rep_seq.faa -db tmp/db_operon -evalue 0.01 -max_target_seqs 1 -max_hsps 1 -outfmt 6 -out tmp/hits_0.01.txt -num_threads 5
   ___
 ##### 3. AB-INITIO APPROACH
 
